@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  tilda:
+    volumes:
+      - ./seed.json:/data/seed.json
+    container_name: carts-mocker
+    ports:
+      - '8110:8110'
+    environment:
+      - PORT=8110
+    image: jizacal/tilda
