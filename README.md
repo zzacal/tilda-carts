@@ -20,6 +20,8 @@ It's a way to fake cart service. This is to allow developers to make calls to a 
 
 ## Cart IDs
 1. cart-200
+1. cart-404
+1. cart-500
 1. fake-cart
 
 ## How does it work?
