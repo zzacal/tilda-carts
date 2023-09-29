@@ -1,13 +1,13 @@
 [
   {
-    "path": "/cart/some-fake-cart",
+    "path": "/cart/cart-200",
     "params": {},
     "body": {},
     "response": {
       "type": "obj",
       "status": "200",
       "body": {
-        "id": "some-fake-cart",
+        "id": "cart-200",
         "items": [
           {
             "type": "EMD",
@@ -338,7 +338,8 @@
           "asgds-printer": "*ETKT*",
           "asgds-station-number": "55260004"
         }
-      }
+      },
+      "contentType": "application/json"
     }
   }
 ]

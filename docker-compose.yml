@@ -3,9 +3,10 @@ services:
   tilda:
     volumes:
       - ./seed.json:/data/seed.json
+      - ./seeds:/data/seeds/
     container_name: carts-mocker
     ports:
       - '8110:8110'
     environment:
       - PORT=8110
-    image: jizacal/tilda
+    image: ghcr.io/zzacal/tilda:latest
