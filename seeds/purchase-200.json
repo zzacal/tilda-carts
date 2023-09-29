@@ -1,0 +1,365 @@
+[
+  {
+    "path": "/purchase/cart",
+    "params": {},
+    "body": {
+      "cartId": "purchase-200"
+    },
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "wasSuccess": true,
+        "callbacks": {
+          "success": "https://reservations.qa.alaskaair.com/checkin/#/EUMRHF/paymentcomplete?lastname=Tester&airport=SEA&id=<CARTID>",
+          "cancel": null,
+          "error": "https://reservations.qa.alaskaair.com/checkin/#/EUMRHF/paymenterror?lastname=Tester&airport=SEA&id=<CARTID>"
+        }
+      },
+      "contentType": "application/json"
+    }
+  },
+  {
+    "path": "/cart/purchase-200",
+    "params": {},
+    "body": {},
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "id": "purchase-200",
+        "items": [
+          {
+            "type": "EMD",
+            "paymentRequest": {
+              "channel": "Airport",
+              "transaction": {
+                "id": "7156006f-805c-488f-b958-19b6042f317f",
+                "recordLocator": "FXPIDZ",
+                "salesTimeStampUtc": "2023-09-28T23:33:09Z",
+                "receivedTimeStampUtc": "2023-09-28T23:33:09Z",
+                "seller": {
+                  "firstName": "NewCheckIn",
+                  "client": {
+                    "name": "NewCheckIn",
+                    "version": "Latest"
+                  },
+                  "carrier": "AS",
+                  "sabreId": "200002",
+                  "agentAAACity": "NET"
+                },
+                "passengers": [
+                  {
+                    "firstName": "ZACALMVPG SR",
+                    "lastName": "TESTER",
+                    "birthday": "1991-01-01T00:00:00",
+                    "loyalty": {
+                      "status": "Unknown"
+                    },
+                    "nameReferenceNumber": "01.01",
+                    "pnrCreationDateCentralTimeZone": "2023-09-28T18:31:00",
+                    "travelTicketCreationDateCentralTimeZone": "2023-09-28T23:33:09Z",
+                    "products": [
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 30.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 30.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 30.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 40.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 40.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 40.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 150.0,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "status": "Pending"
+          }
+        ],
+        "status": "Pending",
+        "onComplete": "https://reservations.qa.alaskaair.com/checkin/#/FXPIDZ/paymentcomplete?lastname=Tester&airport=SEA&id=<CARTID>",
+        "onError": "https://reservations.qa.alaskaair.com/checkin/#/FXPIDZ/paymenterror?lastname=Tester&airport=SEA&id=<CARTID>",
+        "paymentHeaders": {
+          "asgds-aaa": "NET",
+          "asgds-appid": "preptofly",
+          "asgds-assign-station-printer": "true",
+          "asgds-printer": "*ETKT*",
+          "asgds-station-number": "55260004"
+        }
+      },
+      "contentType": "application/json"
+    }
+  }
+]
