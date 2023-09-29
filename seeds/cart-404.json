@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/cart/cart-404",
+    "params": {},
+    "body": {},
+    "response": {
+      "type": "obj",
+      "status": "404",
+      "body": {
+        "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+        "title": "Not Found",
+        "status": 404,
+        "traceId": "00-51425175157cf1f7cee8f5e92246bb69-35afebcc499805f1-00"
+      },
+      "contentType": "application/json"
+    }
+  }
+]
