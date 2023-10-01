@@ -19,10 +19,11 @@ It's a way to fake cart service. This is to allow developers to make calls to a 
   - ![](./Screen%20Shot%202023-09-28%20at%204.40.03%20PM.png)
 
 ## Cart IDs
-1. cart-200
-1. cart-404
-1. cart-500
+1. cart-200 - cart returns a 200
+1. cart-404 - cart returns a 404
+1. cart-500 - cart returns a 500
+1. purchase-200 - cart returns 200; purchase returns 200
 1. fake-cart
 
 ## How does it work?
-[tilda](https://hub.docker.com/repository/docker/jizacal/tilda/general) is a web service faking tool that can be configured to respond to requests in any way you want. The `seed.json` file contains a configuration for a request to "/cart/some-fake-cart". tilda will respond to that request as configured.
+[tilda](https://github.com/zzacal/tilda) is a web service faking tool that can be configured to respond to requests in any way you want. The directory `seeds/` contains fake responses from the payment service.
