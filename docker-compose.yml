@@ -2,7 +2,6 @@ version: '3.3'
 services:
   tilda:
     volumes:
-      - ./seed.json:/data/seed.json
       - ./seeds:/data/seeds/
     container_name: carts-mocker
     ports:

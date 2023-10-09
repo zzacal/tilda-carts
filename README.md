@@ -2,10 +2,11 @@
 It's a way to fake cart service. This is to allow developers to make calls to a fake cart service while working on the payment ui.
 
 ## Requirements
-1. [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/) or [Docker Engine](https://docs.docker.com/engine/install/)
+1. [Rancher Desktop](https://rancherdesktop.io/). 
+   - **IMPORTANT** Docker Desktop may be deprecated by the org in march. If you already have Docker Desktop, follow the [official migration guide](https://github.com/Alaska-ITS/EA-LivingDocuments/blob/main/RancherDesktop/InstallRancherDesktop.md).
 
 ## Starting the container
-1. start docker engine or docker desktop
+1. start Rancher Desktop
 1. start the container
    ```sh
    docker compose up -d
