@@ -12,7 +12,9 @@
         "status": 500,
         "traceId": "00-51425175157cf1f7cee8f5e92246bb69-35afebcc499805f1-00"
       },
-      "contentType": "application/json"
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   }
 ]
