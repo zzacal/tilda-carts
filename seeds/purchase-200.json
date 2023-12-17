@@ -1,9 +1,11 @@
 [
   {
-    "path": "/purchase/cart",
-    "params": {},
-    "body": {
-      "cartId": "purchase-200"
+    "request": {
+      "path": "/purchase/cart",
+      "params": {},
+      "body": {
+        "cartId": "purchase-200"
+      }
     },
     "response": {
       "type": "obj",
@@ -20,9 +22,11 @@
     }
   },
   {
-    "path": "/cart/purchase-200",
-    "params": {},
-    "body": {},
+    "request": {
+      "path": "/cart/purchase-200",
+      "params": {},
+      "body": {}
+    },
     "response": {
       "type": "obj",
       "status": "200",

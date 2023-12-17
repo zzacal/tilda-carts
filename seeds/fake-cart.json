@@ -1,8 +1,10 @@
 [
   {
-    "path": "/cart/fake-cart",
-    "params": {},
-    "body": {},
+    "request": {
+      "path": "/cart/fake-cart",
+      "params": {},
+      "body": {}
+    },
     "response": {
       "type": "obj",
       "status": "200",

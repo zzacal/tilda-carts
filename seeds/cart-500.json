@@ -1,8 +1,10 @@
 [
   {
-    "path": "/cart/cart-500",
-    "params": {},
-    "body": {},
+    "request": {
+      "path": "/cart/cart-500",
+      "params": {},
+      "body": {}
+    },
     "response": {
       "type": "obj",
       "status": "500",
