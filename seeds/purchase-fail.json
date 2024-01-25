@@ -1,7 +1,30 @@
 [
   {
     "request": {
-      "path": "/cart/cart-200",
+      "path": "/purchase/cart",
+      "params": {},
+      "body": {
+        "cartId": "purchase-fail"
+      }
+    },
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "wasSuccess": false,
+        "error": "I was set up to fail",
+        "callbacks": {
+          "success": "/purchase-fail",
+          "cancel": null,
+          "error": "/purchase-fail"
+        }
+      },
+      "contentType": "application/json"
+    }
+  },
+  {
+    "request": {
+      "path": "/cart/purchase-fail",
       "params": {},
       "body": {}
     },
@@ -9,7 +32,7 @@
       "type": "obj",
       "status": "200",
       "body": {
-        "id": "cart-200",
+        "id": "purchase-fail",
         "items": [
           {
             "type": "EMD",
@@ -331,8 +354,8 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/cart-200",
-        "onError": "/cart-200",
+        "onComplete": "/purchase-fail",
+        "onError": "/purchase-fail",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",
@@ -344,28 +367,6 @@
       "headers": {
         "Content-Type": "application/json"
       }
-    }
-  },
-  {
-    "request": {
-      "path": "/purchase/cart",
-      "params": {},
-      "body": {
-        "cartId": "cart-200"
-      }
-    },
-    "response": {
-      "type": "obj",
-      "status": "400",
-      "body": {
-        "wasSuccess": true,
-        "callbacks": {
-          "success": "/cart-200",
-          "cancel": null,
-          "error": "/cart-200"
-        }
-      },
-      "contentType": "application/json"
     }
   }
 ]

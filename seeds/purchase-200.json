@@ -13,9 +13,9 @@
       "body": {
         "wasSuccess": true,
         "callbacks": {
-          "success": "https://reservations.qa.alaskaair.com/checkin/#/EUMRHF/paymentcomplete?lastname=Tester&airport=SEA&id=<CARTID>",
+          "success": "/purchase-200",
           "cancel": null,
-          "error": "https://reservations.qa.alaskaair.com/checkin/#/EUMRHF/paymenterror?lastname=Tester&airport=SEA&id=<CARTID>"
+          "error": "/purchase-200"
         }
       },
       "contentType": "application/json"
@@ -353,8 +353,8 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "https://reservations.qa.alaskaair.com/checkin/#/FXPIDZ/paymentcomplete?lastname=Tester&airport=SEA&id=<CARTID>",
-        "onError": "https://reservations.qa.alaskaair.com/checkin/#/FXPIDZ/paymenterror?lastname=Tester&airport=SEA&id=<CARTID>",
+        "onComplete": "/purchase-200",
+        "onError": "/purchase-200",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",
