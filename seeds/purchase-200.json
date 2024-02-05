@@ -355,6 +355,8 @@
         "status": "Pending",
         "onComplete": "/purchase-200",
         "onError": "/purchase-200",
+        "onCompleteURICallback": "/purchase-200",
+        "onCancel": "/purchase-200",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",

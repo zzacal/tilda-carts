@@ -355,6 +355,8 @@
         ],
         "status": "Pending",
         "onComplete": "/purchase-fail",
+        "onCompleteURICallback": "/purchase-fail",
+        "onCancel": "/purchase-fail",
         "onError": "/purchase-fail",
         "paymentHeaders": {
           "asgds-aaa": "NET",
