@@ -4,7 +4,7 @@
       "path": "/purchase/cart",
       "params": {},
       "body": {
-        "cartId": "purchase-fail"
+        "cartId": "purchase-delayed"
       }
     },
     "response": {
@@ -14,17 +14,18 @@
         "wasSuccess": false,
         "error": "I was set up to fail",
         "callbacks": {
-          "success": "/purchase-fail",
+          "success": "/purchase-delayed",
           "cancel": null,
-          "error": "/purchase-fail"
+          "error": "/purchase-delayed"
         }
       },
-      "contentType": "application/json"
+      "contentType": "application/json",
+      "delay": 30000
     }
   },
   {
     "request": {
-      "path": "/cart/purchase-fail",
+      "path": "/cart/purchase-delayed",
       "params": {},
       "body": {}
     },
@@ -32,7 +33,7 @@
       "type": "obj",
       "status": "200",
       "body": {
-        "id": "purchase-fail",
+        "id": "purchase-delayed",
         "items": [
           {
             "type": "EMD",
@@ -354,10 +355,10 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/purchase-fail",
-        "onCompleteURICallback": "/purchase-fail",
-        "onCancel": "/purchase-fail",
-        "onError": "/purchase-fail",
+        "onComplete": "/purchase-delayed",
+        "onCompleteURICallback": "/purchase-delayed",
+        "onCancel": "/purchase-delayed",
+        "onError": "/purchase-delayed",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",
@@ -368,7 +369,8 @@
       },
       "headers": {
         "Content-Type": "application/json"
-      }
+      },
+      "delay": 30000
     }
   }
 ]
