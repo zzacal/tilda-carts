@@ -108,7 +108,8 @@
               "enabled": false
             },
             "cybersource": {
-              "enabled": true
+              "enabled": true,
+              "merchantType": "airline"
             },
             "bluefin": {
               "enabled": false
