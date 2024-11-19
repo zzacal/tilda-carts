@@ -1,0 +1,150 @@
+[
+  {
+    "request": {
+      "path": "/cart/cybersource-forward-stop",
+      "params": {},
+      "body": {}
+    },
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "id": "cybersource-forward-stop",
+        "items": [
+          {
+            "type": "EMD",
+            "paymentRequest": {
+              "channel": "Airport",
+              "transaction": {
+                "id": "7156006f-805c-488f-b958-19b6042f317f",
+                "recordLocator": "FXPIDZ",
+                "salesTimeStampUtc": "2023-09-28T23:33:09Z",
+                "receivedTimeStampUtc": "2023-09-28T23:33:09Z",
+                "seller": {
+                  "firstName": "NewCheckIn",
+                  "client": {
+                    "name": "NewCheckIn",
+                    "version": "Latest"
+                  },
+                  "carrier": "AS",
+                  "sabreId": "200002",
+                  "agentAAACity": "NET"
+                },
+                "passengers": [
+                  {
+                    "firstName": "ZACALMVPG SR",
+                    "lastName": "TESTER",
+                    "birthday": "1991-01-01T00:00:00",
+                    "loyalty": {
+                      "status": "Unknown"
+                    },
+                    "nameReferenceNumber": "01.01",
+                    "pnrCreationDateCentralTimeZone": "2023-09-28T18:31:00",
+                    "travelTicketCreationDateCentralTimeZone": "2023-09-28T23:33:09Z",
+                    "products": [
+                      {
+                        "channel": "Airport",
+                        "id": "0GO",
+                        "name": "STANDARD PIECE MAX 50LB 62LI",
+                        "category": {
+                          "id": "BG",
+                          "name": "Baggage"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 1.00,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 1.00,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 1.00,
+                          "currencyType": 0
+                        },
+                        "discountReason": "NA",
+                        "discountRemark": "NA",
+                        "isManualWaiver": false,
+                        "refundReason": "NA",
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1292",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2023-09-29T06:00:00",
+                            "classOfService": "V",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272344639251",
+                            "couponNumber": "1"
+                          }
+                        ],
+                        "emdType": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "status": "Pending"
+          }
+        ],
+        "status": "Pending",
+        "onComplete": "/cybersource-forward-stop",
+        "onCompleteURICallback": "/cybersource-forward-stop",
+        "onCancel": "/cybersource-forward-stop",
+        "onError": "/cybersource-forward-stop",
+        "paymentHeaders": {
+          "asgds-aaa": "NET",
+          "asgds-appid": "preptofly",
+          "asgds-assign-station-printer": "true",
+          "asgds-printer": "*ETKT*",
+          "asgds-station-number": "55260004"
+        },
+        "options": {
+          "paymentMethods": {
+            "applePay": {
+              "enabled": false
+            },
+            "cybersource": {
+              "enabled": true,
+              "merchantType": "airline"
+            },
+            "bluefin": {
+              "enabled": false
+            }
+          }
+        },      
+        "forward": {
+          "url": "http://localhost:8120/error-stop"
+        }
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "/purchase/cart",
+      "params": {},
+      "body": {
+        "cartId": "cybersource-forward-stop"
+      }
+    },
+    "response": {
+      "type": "obj",
+      "status": "400",
+      "body": {
+        "wasSuccess": true,
+        "callbacks": {
+          "success": "/cybersource-forward-stop",
+          "cancel": null,
+          "error": "/cybersource-forward-stop"
+        }
+      },
+      "contentType": "application/json"
+    }
+  }
+]
