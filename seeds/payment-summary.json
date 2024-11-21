@@ -1,0 +1,227 @@
+[
+  {
+    "request": {
+      "path": "/cart/payment-summary",
+      "params": {},
+      "body": {}
+    },
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "id": "payment-summary",
+        "items": [
+          {
+            "type": "EMD",
+            "paymentRequest": {
+              "channel": "Airport",
+              "sendToDap": true,
+              "writeOSI": true,
+              "transaction": {
+                "id": "7075f896-deff-4c4d-9623-1495026cb0cd",
+                "recordLocator": "TNNJTN",
+                "salesTimeStampUtc": "0001-01-01T00:00:00",
+                "receivedTimeStampUtc": "0001-01-01T00:00:00",
+                "seller": {
+                  "firstName": "ALKApp/IOS",
+                  "client": {
+                    "name": "ALKApp/IOS",
+                    "version": "6.1.0"
+                  },
+                  "carrier": "AS",
+                  "sabreId": "33334",
+                  "agentAAACity": "NET"
+                },
+                "passengers": [
+                  {
+                    "firstName": "Liam",
+                    "lastName": "Brozik",
+                    "birthday": "0001-01-01T00:00:00",
+                    "nameReferenceNumber": "1.1",
+                    "pnrCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "travelTicketCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "products": [
+                      {
+                        "channel": "Airport",
+                        "id": "04D",
+                        "name": "Premium Class",
+                        "category": {
+                          "id": "UP",
+                          "name": "Upgrade"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 27.9,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 27.9,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 29.99,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 2.09,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1316",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2024-11-14T06:00:00Z",
+                            "classOfService": "M",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272379898967",
+                            "couponNumber": "1",
+                            "seatNumber": "8A"
+                          }
+                        ],
+                        "reasonForIssuanceCode": "A",
+                        "emdType": 0
+                      }
+                    ]
+                  },
+                  {
+                    "firstName": "Bryan",
+                    "lastName": "Gomel",
+                    "birthday": "0001-01-01T00:00:00",
+                    "nameReferenceNumber": "2.1",
+                    "pnrCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "travelTicketCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "products": [
+                      {
+                        "channel": "Airport",
+                        "id": "04D",
+                        "name": "Premium Class",
+                        "category": {
+                          "id": "UP",
+                          "name": "Upgrade"
+                        },
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 27.9,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 27.9,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 29.99,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 2.09,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "flights": [
+                          {
+                            "carrier": "AS",
+                            "number": "1316",
+                            "origin": "SEA",
+                            "destination": "LAX",
+                            "departureDate": "2024-11-14T06:00:00Z",
+                            "classOfService": "M",
+                            "bookingStatus": "HK",
+                            "ticketNumber": "0272379898968",
+                            "couponNumber": "1",
+                            "seatNumber": "8B"
+                          }
+                        ],
+                        "reasonForIssuanceCode": "A",
+                        "emdType": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "status": "Pending"
+          }
+        ],
+        "attempts": 0,
+        "status": "Pending",
+        "onCancel": "https://www.alaskaair.com/?cancel",
+        "onComplete": "https://www.alaskaair.com/?complete",
+        "onError": "https://www.alaskaair.com/?error",
+        "options": {
+          "paymentSummary": {
+            "lineItems": [
+              {
+                "description": "2 Seat upgrades for Bridget",
+                "currency": "USD",
+                "amount": 70,
+                "subItems": [
+                  {
+                    "description": "SEA-LAX | Premium Class 8C",
+                    "amount": 40
+                  },
+                  {
+                    "description": "LAX-SEA | Premium Class 17B",
+                    "amount": 30
+                  },
+                  {
+                    "description": "Taxes and Fees",
+                    "amount": 7
+                  }
+                ]
+              },
+              {
+                "description": "2 Seat upgrades for Longfirstname",
+                "currency": "USD",
+                "amount": 70,
+                "subItems": [
+                  {
+                    "description": "SEA-LAX | Premium Class 8B",
+                    "amount": 40
+                  },
+                  {
+                    "description": "LAX-SEA | Premium Class 17A",
+                    "amount": 30
+                  },
+                  {
+                    "description": "Taxes and Fees",
+                    "amount": 7
+                  }
+                ]
+              }
+            ],
+            "total": {
+              "currency": "USD",
+              "amount": 153.0
+            }
+          }
+        },
+        "paymentHeaders": {
+          "asgds-aaa": "NET",
+          "asgds-assign-station-printer": "true",
+          "asgds-station-number": "55260004",
+          "asgds-appid": "mobile",
+          "asgds-printer": "*ETKT*"
+        },
+        "analytics": {},
+        "forward": {
+          "url": "https://localhost:7221/purchase/cart",
+          "headers": {
+            "request-Type": "Checkin"
+          }
+        }
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+]
