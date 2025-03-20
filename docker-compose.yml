@@ -7,4 +7,4 @@ services:
       - '8110:8110'
     environment:
       - PORT=8110
-    image: ghcr.io/zzacal/tilda:v5.0.3-alpha
+    image: ghcr.io/zzacal/tilda:v5.0.4-alpha
