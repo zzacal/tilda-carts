@@ -91,10 +91,10 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/cybersource-forward-domain-validation-fail",
-        "onCompleteURICallback": "/cybersource-forward-domain-validation-fail",
-        "onCancel": "/cybersource-forward-domain-validation-fail",
-        "onError": "/cybersource-forward-domain-validation-fail",
+        "onComplete": "https://www.alaskaair.com/cybersource-forward-domain-validation-fail",
+        "onCompleteURICallback": "https://www.alaskaair.com/cybersource-forward-domain-validation-fail",
+        "onCancel": "https://www.alaskaair.com/cybersource-forward-domain-validation-fail",
+        "onError": "https://www.alaskaair.com/cybersource-forward-domain-validation-fail",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",

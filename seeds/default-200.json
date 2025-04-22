@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "path": "/cart/cybersource-forward-retry-notfound",
+      "path": "/cart/default-200",
       "params": {},
       "body": {}
     },
@@ -9,7 +9,7 @@
       "type": "obj",
       "status": "200",
       "body": {
-        "id": "cybersource-forward-retry-notfound",
+        "id": "default-200",
         "items": [
           {
             "type": "EMD",
@@ -52,15 +52,15 @@
                         },
                         "quantity": 1,
                         "basePrice": {
-                          "amount": 1.00,
+                          "amount": 30.0,
                           "currencyType": 0
                         },
                         "salePrice": {
-                          "amount": 1.00,
+                          "amount": 30.0,
                           "currencyType": 0
                         },
                         "totalPrice": {
-                          "amount": 1.00,
+                          "amount": 30.0,
                           "currencyType": 0
                         },
                         "discountReason": "NA",
@@ -91,34 +91,16 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "https://www.alaskaair.com/cybersource-forward-retry-notfound",
-        "onCompleteURICallback": "https://www.alaskaair.com/cybersource-forward-retry-notfound",
-        "onCancel": "https://www.alaskaair.com/cybersource-forward-retry-notfound",
-        "onError": "https://www.alaskaair.com/cybersource-forward-retry-notfound",
+        "onComplete": "https://www.alaskaair.com/default-200",
+        "onCompleteURICallback": "https://www.alaskaair.com/default-200",
+        "onCancel": "https://www.alaskaair.com/default-200",
+        "onError": "https://www.alaskaair.com/default-200",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",
           "asgds-assign-station-printer": "true",
           "asgds-printer": "*ETKT*",
           "asgds-station-number": "55260004"
-        },
-        "options": {
-          "paymentMethods": {
-            "applePay": {
-              "enabled": false
-            },
-            "cybersource": {
-              "enabled": true,
-              "merchantType": "airline"
-            },
-            "bluefin": {
-              "enabled": false
-            }
-          }
-        },      
-        "forward": {
-          "url": "https://www.alaskaair.com/error-retry-notfound",
-          "headers": { "SOME_CRITICAL_HEADER_KEY" :"SOME_CRITICAL_HEADER_VALUE" }
         }
       },
       "headers": {
@@ -131,18 +113,18 @@
       "path": "/purchase/cart",
       "params": {},
       "body": {
-        "cartId": "cybersource-forward-retry-notfound"
+        "cartId": "default-200"
       }
     },
     "response": {
       "type": "obj",
-      "status": "400",
+      "status": "200",
       "body": {
         "wasSuccess": true,
         "callbacks": {
-          "success": "/cybersource-forward-retry-notfound",
+          "success": "https://www.alaskaair.com/default-200",
           "cancel": null,
-          "error": "/cybersource-forward-retry-notfound"
+          "error": "https://www.alaskaair.com/default-200"
         }
       },
       "contentType": "application/json"

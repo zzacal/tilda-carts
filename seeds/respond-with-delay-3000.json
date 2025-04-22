@@ -355,10 +355,10 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/respond-with-delay-3000",
-        "onCompleteURICallback": "/respond-with-delay-3000",
-        "onCancel": "/respond-with-delay-3000",
-        "onError": "/respond-with-delay-3000",
+        "onComplete": "https://www.alaskaair.com/respond-with-delay-3000",
+        "onCompleteURICallback": "https://www.alaskaair.com/respond-with-delay-3000",
+        "onCancel": "https://www.alaskaair.com/respond-with-delay-3000",
+        "onError": "https://www.alaskaair.com/respond-with-delay-3000",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",

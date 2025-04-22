@@ -332,9 +332,9 @@
         ],
         "status": "Pending",
         "onComplete": "/cart-200",
-        "onCompleteURICallback": "/cart-200",
-        "onCancel": "/cart-200",
-        "onError": "/cart-200",
+        "onCompleteURICallback": "https://www.alaskaair.com/cart-200",
+        "onCancel": "https://www.alaskaair.com/cart-200",
+        "onError": "https://www.alaskaair.com/cart-200",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",

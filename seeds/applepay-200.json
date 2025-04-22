@@ -91,10 +91,10 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/applepay-200",
+        "onComplete": "https://www.alaskaair.com/applepay-200",
         "onCompleteURICallback": "/applepay-200",
-        "onCancel": "/applepay-200",
-        "onError": "/applepay-200",
+        "onCancel": "https://www.alaskaair.com/applepay-200",
+        "onError": "https://www.alaskaair.com/applepay-200",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",
@@ -129,9 +129,9 @@
       "body": {
         "wasSuccess": true,
         "callbacks": {
-          "success": "/applepay-200",
+          "success": "https://www.alaskaair.com/applepay-200",
           "cancel": null,
-          "error": "/applepay-200"
+          "error": "https://www.alaskaair.com/applepay-200"
         }
       },
       "contentType": "application/json"

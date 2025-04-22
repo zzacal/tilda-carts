@@ -91,10 +91,10 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/cybersource-200",
-        "onCompleteURICallback": "/cybersource-200",
-        "onCancel": "/cybersource-200",
-        "onError": "/cybersource-200",
+        "onComplete": "https://www.alaskaair.com/cybersource-200",
+        "onCompleteURICallback": "https://www.alaskaair.com/cybersource-200",
+        "onCancel": "https://www.alaskaair.com/cybersource-200",
+        "onError": "https://www.alaskaair.com/cybersource-200",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",

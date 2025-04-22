@@ -91,10 +91,10 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/cybersource-forward-stop-get-alaskaair",
-        "onCompleteURICallback": "/cybersource-forward-stop-get-alaskaair",
-        "onCancel": "/cybersource-forward-stop-get-alaskaair",
-        "onError": "/cybersource-forward-stop-get-alaskaair",
+        "onComplete": "https://www.alaskaair.com/cybersource-forward-stop-get-alaskaair",
+        "onCompleteURICallback": "https://www.alaskaair.com/cybersource-forward-stop-get-alaskaair",
+        "onCancel": "https://www.alaskaair.com/cybersource-forward-stop-get-alaskaair",
+        "onError": "https://www.alaskaair.com/cybersource-forward-stop-get-alaskaair",
         "paymentHeaders": {
           "asgds-aaa": "NET",
           "asgds-appid": "preptofly",
@@ -117,7 +117,7 @@
           }
         },      
         "forward": {
-          "url": "http://localhost:8120/error-stop-get-alaskaair"
+          "url": "https://www.alaskaair.com/error-stop-get-alaskaair"
         }
       },
       "headers": {

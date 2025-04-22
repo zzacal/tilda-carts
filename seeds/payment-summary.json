@@ -213,7 +213,7 @@
         },
         "analytics": {},
         "forward": {
-          "url": "https://localhost:7221/purchase/cart",
+          "url": "https://www.alaskaair.com/purchase/cart",
           "headers": {
             "request-Type": "Checkin"
           }

@@ -1,0 +1,196 @@
+[
+  {
+    "request": {
+      "path": "/cart/cybersource-multi-200",
+      "params": {},
+      "body": {}
+    },
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "id": "sample-cart2",
+        "items": [
+          {
+            "type": "EMD",
+            "paymentRequest": {
+              "channel": "Unknown",
+              "sendToDap": true,
+              "writeOSI": true,
+              "transaction": {
+                "id": "dcbff844-b78a-47fd-ac78-9e3823cf1c14",
+                "recordLocator": "QMQNDN",
+                "salesTimeStampUtc": "0001-01-01T00:00:00",
+                "receivedTimeStampUtc": "0001-01-01T00:00:00",
+                "passengers": [
+                  {
+                    "firstName": "NATHAN",
+                    "lastName": "RANDALL",
+                    "birthday": "0001-01-01T00:00:00",
+                    "nameReferenceNumber": "1.1",
+                    "pnrCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "travelTicketCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "products": [
+                      {
+                        "channel": "Unknown",
+                        "name": "SEA-LAX | Main Preferred 11D for NATHAN",
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 25.12,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 25.12,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 27.0,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 1.88,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Unknown",
+                        "name": "SEA-LAX | Main Preferred 11D for NATHAN",
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 25.12,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 25.12,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 27.0,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 1.88,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "emdType": 0
+                      },
+                      {
+                        "channel": "Unknown",
+                        "name": "SEA-LAX | Main Preferred 11D for NATHAN",
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 25.12,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 25.12,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 27.0,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 1.88,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "emdType": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "status": "Pending"
+          }
+        ],
+        "attempts": 0,
+        "status": "Pending",
+        "onCompleteFormPost": {
+          "url": "https://reservations.qa.alaskaair.com/reservation/",
+          "formData": {
+            "codeOrNumber": "QMQNDN",
+            "travelerLastName": "Randall"
+          }
+        },
+        "onError": "https://reservations.qa.alaskaair.com/select-seats/?sid=9799fead-f85b-49a4-af9e-9f756366eb73&expire=1744135773&errorCode=paymenterror",
+        "options": {
+          "paymentMethods": {
+            "applePay": {
+              "enabled": true
+            },
+            "commercialAcct": {
+              "enabled": true
+            },
+            "cybersource": {
+              "enabled": true,
+              "merchantType": "airline"
+            },
+            "bluefin": {
+              "enabled": false
+            }
+          }
+        },
+        "paymentHeaders": {
+          "asgds-appid": "SEATSUI"
+        },
+        "analytics": {
+          "page_name": "booking:viewpnr seats payment-beta",
+          "page_type": "booking",
+          "channel": "booking",
+          "my_account_activity": "MyOverview",
+          "form_state": "ViewPNR^Purchase",
+          "tealiumEventName": "viewpnr seats payment",
+          "products": ";Fee:Main Preferred - Purchase;1;25.12",
+          "events": ""
+        },
+        "forward": {
+          "url": "https://apis.qa.alaskaair.com/1/guestExperience/travelManagement/seats/cartPurchase/9799fead-f85b-49a4-af9e-9f756366eb73",
+          "headers": {
+            "ocp-Apim-Subscription-Key": "ce2f6b0cc82d4ee29590578c845f84a0",
+            "asgds-appid": "SEATSUI",
+            "asgds-aaa": "NET"
+          }
+        }
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "/purchase/cart",
+      "params": {},
+      "body": {
+        "cartId": "cybersource-multi-200"
+      }
+    },
+    "response": {
+      "type": "obj",
+      "status": "400",
+      "body": {
+        "wasSuccess": true,
+        "callbacks": {
+          "success": "/cybersource-multi-200",
+          "cancel": null,
+          "error": "/cybersource-multi-200"
+        }
+      },
+      "contentType": "application/json"
+    }
+  }
+]

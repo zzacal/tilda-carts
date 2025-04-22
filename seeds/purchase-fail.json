@@ -14,9 +14,9 @@
         "wasSuccess": false,
         "error": "I was set up to fail",
         "callbacks": {
-          "success": "/purchase-fail",
+          "success": "https://www.alaskaair.com/purchase-fail",
           "cancel": null,
-          "error": "/purchase-fail"
+          "error": "https://www.alaskaair.com/purchase-fail"
         }
       },
       "contentType": "application/json"
