@@ -331,7 +331,7 @@
           }
         ],
         "status": "Pending",
-        "onComplete": "/cart-200",
+        "onComplete": "https://www.alaskaair.com/cart-200",
         "onCompleteURICallback": "https://www.alaskaair.com/cart-200",
         "onCancel": "https://www.alaskaair.com/cart-200",
         "onError": "https://www.alaskaair.com/cart-200",
