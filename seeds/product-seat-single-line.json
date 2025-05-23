@@ -1,0 +1,158 @@
+[
+  {
+    "request": {
+      "path": "/cart/product-seat-single-line",
+      "params": {},
+      "body": {}
+    },
+    "response": {
+      "type": "obj",
+      "status": "200",
+      "body": {
+        "id": "product-seat-single-line",
+        "items": [
+          {
+            "type": "EMD",
+            "paymentRequest": {
+              "channel": "Unknown",
+              "sendToDap": true,
+              "writeOSI": true,
+              "transaction": {
+                "id": "eaaedd10-09c9-45d6-8419-34b10ff4b1ca",
+                "recordLocator": "ABCDEF",
+                "salesTimeStampUtc": "0001-01-01T00:00:00",
+                "receivedTimeStampUtc": "0001-01-01T00:00:00",
+                "passengers": [
+                  {
+                    "firstName": "Michael B",
+                    "lastName": "Jordan",
+                    "birthday": "0001-01-01T00:00:00",
+                    "nameReferenceNumber": "1.1",
+                    "pnrCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "travelTicketCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "products": [
+                      {
+                        "channel": "Unknown",
+                        "name": "SEA-BOS | Premium Class 8A for Michael Jordan",
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 72.55,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 72.55,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 77.99,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 5.44,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "emdType": 0
+                      }
+                    ]
+                  },
+                  {
+                    "firstName": "David",
+                    "lastName": "Bowie",
+                    "birthday": "0001-01-01T00:00:00",
+                    "nameReferenceNumber": "2.1",
+                    "pnrCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "travelTicketCreationDateCentralTimeZone": "0001-01-01T00:00:00",
+                    "products": [
+                      {
+                        "channel": "Unknown",
+                        "name": "SEA-BOS | Premium Class 8B for David",
+                        "quantity": 1,
+                        "basePrice": {
+                          "amount": 72.55,
+                          "currencyType": 0
+                        },
+                        "salePrice": {
+                          "amount": 72.55,
+                          "currencyType": 0
+                        },
+                        "totalPrice": {
+                          "amount": 77.99,
+                          "currencyType": 0
+                        },
+                        "taxes": [
+                          {
+                            "code": "US",
+                            "amount": 5.44,
+                            "currencyType": 0
+                          }
+                        ],
+                        "isManualWaiver": false,
+                        "emdType": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "status": "Pending"
+          }
+        ],
+        "attempts": 0,
+        "status": "Pending",
+        "onCompleteFormPost": {
+          "url": "https://reservations.alaskaair.com/reservation/",
+          "formData": {
+            "codeOrNumber": "ABCDEF",
+            "travelerLastName": "Jordan"
+          }
+        },
+        "onError": "https://reservations.alaskaair.com/select-seats/?sid=d9d65acb-b0bc-4459-af88-3277569b7ca1&expire=1747076226&errorCode=paymenterror",
+        "options": {
+          "paymentMethods": {
+            "applePay": {
+              "enabled": true
+            },
+            "commercialAcct": {
+              "enabled": true
+            },
+            "cybersource": {
+              "enabled": true,
+              "merchantType": "airline"
+            },
+            "bluefin": {
+              "enabled": false
+            }
+          }
+        },
+        "paymentHeaders": {
+          "asgds-appid": "SEATSUI"
+        },
+        "analytics": {
+          "page_name": "booking:viewpnr seats payment-beta",
+          "page_type": "booking",
+          "channel": "booking",
+          "my_account_activity": "MyOverview",
+          "form_state": "ViewPNR^Purchase",
+          "tealiumEventName": "viewpnr seats payment",
+          "products": ";Fee:Premium Class Seat - Purchase;1;72.55",
+          "events": ""
+        },
+        "forward": {
+          "url": "https://apis.alaskaair.com/1/guestExperience/travelManagement/seats/cartPurchase/d9d65acb-b0bc-4459-af88-3277569b7ca1",
+          "headers": {
+            "ocp-Apim-Subscription-Key": "ggggggggggg",
+            "asgds-appid": "SEATSUI",
+            "asgds-aaa": "NET"
+          }
+        }
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+]
